@@ -1,1 +1,1 @@
-# Learning_Web_Technologies_Summer_2021
+# Learning_Web_Technologies_Summer_A_2021
