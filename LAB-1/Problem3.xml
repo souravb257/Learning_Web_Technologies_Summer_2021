@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<Employee>
+	<Data>
+	<id>1</id>
+	<Name>John Doe</Name>
+	<Address>H# 38, R#3, Banani, Dhaka</Address>
+	<Department>Sales</Department>
+	<Salary>$20000</Salary>
+	
+</Data>
+<Data>
+	<id>2</id>
+	<Name>Mark Zuckerberg</Name>
+	<Address>Flat# A/1, H# 20, R#18, Mirpur, Dhaka </Address>
+	<Department>Accounts</Department>
+	<Salary>$12000</Salary>
+</Data>
+<Data>
+	<id>3</id>
+	<Name>Ala Voski</Name>
+	<Address>H# 38, R#3, Motijheel </Address>
+	<Department>Human Resource</Department>
+	<Salary>$30000</Salary>
+</Data>
+</Employee>

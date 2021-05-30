@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<Mobile>
+	<Data>
+	<id>11</id>
+	<Name>Saamsung</Name>
+	<UnitPrice>3500</UnitPrice>
+	<Stock>50</Stock>
+	<Status>1</Status>
+</Data>
+<Data>
+    <id>11</id>
+	<Name>HTC</Name>
+	<UnitPrice>65300</UnitPrice>
+	<Stock>35</Stock>
+	<Status>0</Status>
+</Data>
+<Data>
+    <id>11</id>
+	<Name>Nokia</Name>
+	<UnitPrice>25100</UnitPrice>
+	<Stock>100</Stock>
+	<Status>1</Status>
+</Data>
+</Mobile>
