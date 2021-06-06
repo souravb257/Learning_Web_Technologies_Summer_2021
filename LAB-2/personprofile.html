@@ -1,0 +1,73 @@
+<html>
+<head>
+	<title>HTML Form Tag</title>
+</head>
+<body>
+
+	<fieldset>
+		<legend>Person Profile</legend>
+		<form>
+			<table border="1">
+				<tr>
+					<td>Name: </td>
+					<td><input type="text" name="name" value=""></td>
+				</tr>
+				
+				<tr>
+					<td>Email: </td>
+					<td><input type="email" name="email" value="" ></td>
+				</tr>
+				
+				<tr>
+					<td>Gender:</td>
+					<td>
+						<input type="radio" name="gender" value=""> Male
+						<input type="radio" name="gender" value=""> Female
+						<input type="radio" name="gender" value=""> Other
+					</td>
+				</tr>
+				<tr>
+					<td>Date of birth:</td>
+					<td><input type="number" name="dob"></td>
+				</tr>
+				<tr>
+					<td>Blood group:</td>
+					<td>
+						<select name="bg">
+							<option value="">A+</option>
+							<option value="">B+</option>
+							<option value="">AB+</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>Degree:</td>
+					<td>
+						<input type="checkbox" name="" value=""> SSC 
+						<input type="checkbox" name="" value=""> HSC
+						<input type="checkbox" name="" value=""> BSC.
+						<input type="checkbox" name="" value=""> MSC.
+					</td>
+				</tr>
+				
+				
+				
+				<tr>
+					<td>Photo</td>
+					<td>
+						<input type="file" name="cv"> <br>
+					</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>
+						
+						<input type="reset" name="reset" value="Reset">
+						<input type="submit" name="submit" value="Submit">
+					</td>
+				</tr>
+			</table>
+		</form>
+	</fieldset>
+</body>
+</html>
