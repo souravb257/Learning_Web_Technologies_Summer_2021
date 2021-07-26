@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Name</title>
+</head>
+<style>
+     
+             
+
+</style>
+
+<body>
+    <form action="" name="form" onsubmit="return myFunction()">
+        <h3 id="nm">Name</h3>
+        <input type="text" name="name" id="name" placeholder="Input your name here"> <br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <script>
+    function myFunction() {
+        let x = document.forms["form"]["name"].value;
+        if (x == "") {
+            alert("Must be fill with word can't be null");
+            return false;
+        } else if (x.length < 2) {
+            alert("Name at least two charcter");
+            return false;
+        } else {
+            if (x.match(/^[A-Za-z"."-]+$/)) {
+                if (x[0].match(/^[A-Za-z]+$/)) {
+                    alert("ok");
+                    return true;
+                } else {
+                    alert("Name should be start with a word");
+                    return false;
+                }
+            } else {
+                alert("a-z or A-Z or dot(.) or dash(-) is not valid!");
+                return false;
+            }
+        }
+    }
+</script>
+
+
+
+</body>
+
+</html>
