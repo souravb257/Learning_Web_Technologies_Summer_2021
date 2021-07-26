@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Gender</title>
+</head>
+
+<body>
+    <fieldset>
+        <legend>Gender</legend>
+        <form action="" onsubmit="return myGender()">
+            <input type="radio" name="male" id="male">Male
+            <input type="radio" name="female" id="female">Female
+            <input type="radio" name="other" id="other">Other <br>
+            <input type="submit" value="Submit">
+        </form>
+        <script>
+    function myGender() {
+        if (document.getElementById("male").checked || document.getElementById("female").checked || document.getElementById("other").checked) {
+            return true;
+        } else {
+            alert("at least 1 should be select");
+            return false;
+        }
+    }
+</script>
+    </fieldset>
+</body>
+
+</html>
