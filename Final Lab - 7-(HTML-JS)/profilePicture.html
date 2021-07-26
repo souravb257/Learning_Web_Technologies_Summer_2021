@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Profile Picture</title>
+</head>
+
+<body>
+    <fieldset>
+        <legend>Profile Picture</legend>
+        <form action="" name="form" onsubmit="return profilePicture()">
+            User Id <input type="text" name="id" id="user"> <br>
+             Picture <input type="file" name="a" id="a">
+            <br>
+            <hr>
+            <input type="submit" value="Submit">
+        </form>
+        <script>
+    function profilePicture() {
+
+        let x = document.forms["form"]["user"].value;
+        if (x == "") {
+            alert("Cannot be empty");
+            return false;
+        } else {
+            if (x >= 0) {} else {
+                alert("Has to be a positive number");
+                return false;
+            }
+        }
+        if (document.getElementById("a") = "") {
+            alert("Cannot be empty");
+            return false;
+        } else {
+            return true;
+        }
+    }
+</script>
+    </fieldset>
+</body>
+
+</html>
