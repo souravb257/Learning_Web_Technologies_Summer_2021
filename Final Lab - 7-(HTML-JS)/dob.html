@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Date of Birth</title>
+</head>
+
+<body>
+    <fieldset>
+        <legend>Date of Birth</legend>
+        <form action="" onsubmit="return myDob()">
+            dd mm yyyy <br>
+            <input type="text" name="dd" id="dd"> / <input type="text" name="mm" id="mm"> / <input type="text" name="yyyy" id="yyyy">
+            <br>
+            <hr>
+            <input type="submit" value="Submit">
+        </form>
+        <script>
+    function myDob() {
+        if (document.getElementById("dd").value == "" || document.getElementById("mm").value == "" || document.getElementById("yyyy").value == "") {
+            alert("Cannot null");
+            return false;
+        } else if (document.getElementById("dd").value <= 0 || document.getElementById("dd").value > 31) {
+            alert("Should be valid date");
+            return false;
+        } else if (document.getElementById("mm").value <= 0 || document.getElementById("mm").value > 12) {
+            alert("should be valid Month");
+            return false;
+        } else if (document.getElementById("yyyy").value < 2000 || document.getElementById("yyyy").value > 3000) {
+            alert("should be valid year");
+            return false;
+        }
+    }
+</script>
+    </fieldset>
+
+</body>
+
+</html>
