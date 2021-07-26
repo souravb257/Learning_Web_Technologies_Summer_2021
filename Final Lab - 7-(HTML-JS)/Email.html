@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Email</title>
+</head>
+<style>
+    #btn:hover, .i:focus{
+        color: #000;
+        background-color: #00bc9c;
+
+    }
+</style>
+
+<body>
+    <form action="" name="form" onsubmit="return myFunction()">
+        <h3>Email</h3>
+        <input type="text" name="email" id="email"> 
+        <input type="button" value="i" onclick="hint()" id="btn">
+        <p id="hintbtn"></p>
+        <br>
+        <input type="submit" value="Submit" id="btn">
+    </form>
+    <script>
+    function hint() {
+        document.getElementById("hintbtn").innerHTML = "hint: sample@example.com";
+    }
+
+    function myFunction() {
+
+        let n = document.forms["form"]["email"].value;
+        if (n == "") {
+            alert("Cannot be empty");
+            return false;
+        } else {
+            if (n.match(/^([w-.]+@([w-]+.)+[w-]{2,4})?$/)) {
+                alert("ok");
+            } else {
+                alert("Must be a valid email address");
+                return false;
+            }
+        }
+    }
+</script>
+</body>
+
+</html>
