@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Degree</title>
+</head>
+<style>
+        
+</style>
+
+<body>
+    <fieldset>
+        <legend>Degree</legend>
+        <form action="" onsubmit="return myDegree()">
+            <input type="checkbox" name="ssc" id="ssc"> SSC
+            <input type="checkbox" name="hsc" id="hsc"> HSC
+            <input type="checkbox" name="bsc" id="bsc"> BSc
+            <input type="submit" value="Submit">
+        </form>
+        <script>
+    function myDegree() {
+        if (document.getElementById("ssc").checked || document.getElementById("hsc").checked || document.getElementById("bsc").checked) {
+            return true;
+        } else {
+            alert("at least one should be select");
+            return false;
+        }
+    }
+</script>
+    </fieldset>
+</body>
+
+</html>
