@@ -1,0 +1,194 @@
+<html>
+<head>
+	<title>Person Profile</title>
+</head>
+<style> 
+
+
+
+
+</style>
+<body>
+
+	<fieldset>
+		<legend>Person Profile</legend>
+		<form name="form" action="" onsubmit="return myPerson()" onclick="form.reset()">
+			<table border="1">
+				
+				<tr>
+					<td>Name: </td>
+					<td><input type="text" name="name" value="" id="name"></td>
+				</tr>
+			
+				
+				<tr>
+					<td>Email: </td>
+					<td><input type="email" name="email" value="" id="email"></td>
+				</tr>
+				
+				<tr>
+					<td>Gender:</td>
+					<td>
+						<input type="radio" name="gender" value="" id="male"> Male
+						<input type="radio" name="gender" value="" id="female"> Female
+						<input type="radio" name="gender" value="" id="other"> Other
+					</td>
+				</tr>
+				<tr>
+					<td>Date of birth:</td>
+					<td><input type="text" name="day" id="day"> / <input type="text" name="month" id="month"> / <input type="text" name="year" id="year"></td>
+				</tr>
+				<tr>
+					<td>Blood group:</td>
+					<td>
+						<select name="blood" id="blood">
+							<option value=""></option>
+							<option value="">A+</option>
+							<option value="">B+</option>
+							<option value="">AB+</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>Degree:</td>
+					<td>
+						<input type="checkbox" name="" value="" id="ssc"> SSC 
+						<input type="checkbox" name="" value="" id="hsc"> HSC
+						<input type="checkbox" name="" value="" id="bsc"> BSC.
+						<input type="checkbox" name="" value="" id="msc"> MSC.
+					</td>
+				</tr>
+				
+				
+				
+				<tr>
+					<td>Photo</td>
+					<td>
+						<input type="file" name="photo" id="photo"> <br>
+					</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>
+						<input type="submit" name="submit" value="Submit">
+						<input type="reset" name="reset" value="Reset">
+						
+					</td>
+				</tr>
+			</table>
+		</form>
+	</fieldset>
+
+	 <script>
+    function myPerson() {
+        let x = document.forms["form"]["name"].value;
+        if (x == "") {
+            alert("Must be fill with word can't be null");
+            return false;
+        } else if (x.length < 2) {
+            alert("Name at least two charcter");
+            return false;
+        } else {
+            if (x.match(/^[A-Za-z"."-]+$/)) {
+                if (x[0].match(/^[A-Za-z]+$/)) {
+                    alert("done");
+                    return true;
+                } else {
+                    alert("Name should be start with a word");
+                    return false;
+                }
+            } else {
+                alert("a-z or A-Z or dot(.) or dash(-) is not valid!");
+                return false;
+            }
+        }
+    }
+</script>
+<script>
+	function myPerson()
+	{
+		 let y = document.forms["form"]["email"].value;
+        if (y == "") {
+            alert("Must be fill with word can't be null");
+            return false;
+    }
+
+</script>
+<script>
+	function myPerson()
+	{
+		 if (document.getElementById("male").checked || document.getElementById("female").checked || document.getElementById("other").checked) {
+            return true;
+        } else {
+            alert("at least 1 gender should be select");
+            return false;
+        }
+    }
+
+</script>
+<script>
+	function myPerson()
+	{
+		 if (document.getElementById("day").value == "" || document.getElementById("month").value == "" || document.getElementById("year").value == "") {
+            alert("Cannot null");
+            return false;
+        } else if (document.getElementById("day").value <= 0 || document.getElementById("day").value > 31) {
+            alert("Should be valid date");
+            return false;
+        } else if (document.getElementById("month").value <= 0 || document.getElementById("month").value > 12) {
+            alert("should be valid Month");
+            return false;
+        } else if (document.getElementById("year").value < 2000 || document.getElementById("year").value > 3000) {
+            alert("should be valid year");
+            return false;
+        }
+    }
+
+</script>
+ <script>
+    function myPerson() {
+    	let bg = document.forms["form"]["blood"].value;
+        if (blood != "") {
+            return true;
+        } else {
+            alert("Must be selected");
+            return false;
+        }
+    }
+</script>
+<script>
+	function myPerson()
+	{
+		 if (document.getElementById("ssc").checked || document.getElementById("hsc").checked || document.getElementById("bsc").checked || document.getElementById("msc").checked) {
+            return true;
+        } else {
+            alert("at least 1 degree should be select");
+            return false;
+        }
+    }
+
+</script>
+ <script>
+    function myPerson() {
+        let photo = document.forms["form"]["photo"].value;
+        if (photo == "") {
+        	alert("Must be need to attach a photo");
+        	return false;
+        }else{
+        	return true;
+        }
+    }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
