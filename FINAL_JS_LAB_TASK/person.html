@@ -102,34 +102,19 @@
                 return false;
             }
         }
-    }
-</script>
-<script>
-	function myPerson()
-	{
-		 let y = document.forms["form"]["email"].value;
+
+        let y = document.forms["form"]["email"].value;
         if (y == "") {
             alert("Must be fill with word can't be null");
             return false;
     }
-
-</script>
-<script>
-	function myPerson()
-	{
-		 if (document.getElementById("male").checked || document.getElementById("female").checked || document.getElementById("other").checked) {
+    if (document.getElementById("male").checked || document.getElementById("female").checked || document.getElementById("other").checked) {
             return true;
         } else {
             alert("at least 1 gender should be select");
             return false;
         }
-    }
-
-</script>
-<script>
-	function myPerson()
-	{
-		 if (document.getElementById("day").value == "" || document.getElementById("month").value == "" || document.getElementById("year").value == "") {
+         if (document.getElementById("day").value == "" || document.getElementById("month").value == "" || document.getElementById("year").value == "") {
             alert("Cannot null");
             return false;
         } else if (document.getElementById("day").value <= 0 || document.getElementById("day").value > 31) {
@@ -142,34 +127,19 @@
             alert("should be valid year");
             return false;
         }
-    }
-
-</script>
- <script>
-    function myPerson() {
-    	let bg = document.forms["form"]["blood"].value;
+        let bg = document.forms["form"]["blood"].value;
         if (blood != "") {
             return true;
         } else {
             alert("Must be selected");
             return false;
         }
-    }
-</script>
-<script>
-	function myPerson()
-	{
-		 if (document.getElementById("ssc").checked || document.getElementById("hsc").checked || document.getElementById("bsc").checked || document.getElementById("msc").checked) {
+        if (document.getElementById("ssc").checked || document.getElementById("hsc").checked || document.getElementById("bsc").checked || document.getElementById("msc").checked) {
             return true;
         } else {
             alert("at least 1 degree should be select");
             return false;
         }
-    }
-
-</script>
- <script>
-    function myPerson() {
         let photo = document.forms["form"]["photo"].value;
         if (photo == "") {
         	alert("Must be need to attach a photo");
@@ -179,6 +149,7 @@
         }
     }
 </script>
+
 
 
 
